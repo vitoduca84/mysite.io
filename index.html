@@ -1,20 +1,11 @@
-<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-<df-messenger
-  oauth-client-id="INSERT_OAUTH_CLIENT_ID"
-  project-id="aceactichat001"
-  agent-id="eb196f08-0807-4796-aa0a-11800872545b"
-  language-code="en"
-  max-query-length="-1">
-  <df-messenger-chat-bubble
-   chat-title="Generative Playbook_01">
-  </df-messenger-chat-bubble>
-</df-messenger>
-<style>
-  df-messenger {
-    z-index: 999;
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-  }
-</style>
+<!-- Widget JavaScript bundle -->
+<script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_GB"></script>
+
+<!-- Search widget element is not visible by default -->
+<gen-search-widget
+  configId="c965dc30-484e-4d08-9481-f89fb7376c59"
+  triggerId="searchWidgetTrigger">
+</gen-search-widget>
+
+<!-- Element that opens the widget on click. It does not have to be an input -->
+<input placeholder="Search here" id="searchWidgetTrigger" />
